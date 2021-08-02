@@ -15,14 +15,10 @@ jobs:
         php-version:
           - "7.3"
           - "7.4"
+          - "8.0"
         dependencies:
           - "lowest"
           - "highest"
-        include:
-          - php-version: "8.0"
-            dependencies: "locked"
-          - php-version: "8.0"
-            dependencies: "highest"
 
     name: Tests with PHP ${{ matrix.php-version }} and ${{ matrix.dependencies }} dependencies
 
